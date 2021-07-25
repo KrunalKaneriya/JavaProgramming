@@ -1,0 +1,11 @@
+Mail Birthday Card	Buy a new Birthday card for John for 30th May	30 May, 2020
+Buy Eggs	Buy eggs for Lunch	4 April, 2020
+Save Money For Phone	Start saving money to Buy a new Phone.	21 September, 2021
+Doctor Appointment	Doctor Appointment at John Street 35.	31 January, 2019
+Create a new app	just a reminder to create a new app	30 June, 2021
+Test	Test Test Test	7 June, 2021
+This is used to add a new item	my typing is really bad	1 July, 2021
+Another test	Don't worry I will delete it afterwards	2 June, 2021
+Sample	This is used to check that it displays red color or not	4 June, 2020
+ddsd	This is used to check that it displays red color or not	30 April, 2020
+Today item	null	26 June, 2021

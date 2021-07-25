@@ -1,0 +1,73 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.HBox?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml" fx:id="mainBorderPane">
+    <top>
+
+        <MenuBar >
+            <Menu text="File">
+                <items>
+                    <MenuItem text="New Password" onAction="#showNewMenu" />
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Exit" onAction="#handleExit"/>
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <left>
+        <ListView fx:id="listview">
+
+        </ListView>
+    </left>
+    <center>
+        <VBox spacing="10">
+
+            <Label text="Password Title"/>
+            <HBox spacing="25">
+            <TextField fx:id="titleField" HBox.hgrow="ALWAYS" disable="true"/>
+                <Button text = "Edit" onAction="#changeTitle"/>
+                <Button text = "Copy"/>
+            </HBox>
+
+            <Label text = "Username: "/>
+            <HBox spacing="25">
+            <TextField fx:id="usernameField" HBox.hgrow="ALWAYS" disable="true"/>
+            <Button text = "Edit" onAction="#changeUsername"/>
+                <Button text = "Copy"/>
+            </HBox>
+
+
+            <Label text="Password"/>
+            <HBox spacing="25">
+                <TextField fx:id="passwordField" HBox.hgrow="ALWAYS" disable="true"/>
+                <Button text="Edit" onAction="#changePassword"/>
+                <Button text = "Copy"/>
+            </HBox>
+
+
+            <Label text = "Website"/>
+            <HBox spacing="25">
+                <TextField fx:id="websiteField" HBox.hgrow="ALWAYS" disable="true"/>
+                <Button text="Edit" onAction="#changeWebsite"/>
+                <Button text = "Copy"/>
+            </HBox>
+            <padding>
+                <Insets top = "20" right="50" left="20"/>
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>

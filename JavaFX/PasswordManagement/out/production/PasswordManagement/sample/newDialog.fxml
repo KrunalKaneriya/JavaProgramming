@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.NewDialogController"
+            prefHeight="400.0" prefWidth="600.0">
+    <content>
+
+        <GridPane hgap="15" vgap="10">
+            <Label text = "Password Title" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" fx:id="titleField" GridPane.hgrow="ALWAYS"/>
+
+            <Label text = "Password Username" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="usernameField" />
+
+            <Label text = "Password" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="valueField"/>
+
+            <Label text = "Website" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="websiteField"/>
+        </GridPane>
+    </content>
+
+
+</DialogPane>

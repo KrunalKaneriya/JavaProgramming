@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.addNewContactController"
+            prefHeight="200.0" prefWidth="300.0" hgap="20" vgap="20">
+
+    <Label text="First Name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="firstNameField" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.hgrow="ALWAYS" />
+
+    <Label text="Last Name: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Phone Number: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="phoneNumberField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="Notes: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextField fx:id="notesField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+</GridPane>

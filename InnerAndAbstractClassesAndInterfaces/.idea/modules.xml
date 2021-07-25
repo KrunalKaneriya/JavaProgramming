@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/InnerAndAbstractClassesAndInterfaces.iml" filepath="$PROJECT_DIR$/.idea/InnerAndAbstractClassesAndInterfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterfaceChallenge/InterfaceChallenge.iml" filepath="$PROJECT_DIR$/InterfaceChallenge/InterfaceChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterfaceChallengeMentor/InterfaceChallengeMentor.iml" filepath="$PROJECT_DIR$/InterfaceChallengeMentor/InterfaceChallengeMentor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Interfaces/Interfaces.iml" filepath="$PROJECT_DIR$/Interfaces/Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InterfacesLinkedLIst/InterfacesLinkedLIst.iml" filepath="$PROJECT_DIR$/InterfacesLinkedLIst/InterfacesLinkedLIst.iml" />
+    </modules>
+  </component>
+</project>
