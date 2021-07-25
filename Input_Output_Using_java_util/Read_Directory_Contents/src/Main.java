@@ -1,8 +1,6 @@
 import java.io.File;
-import java.io.IOException;
-import java.nio.file.FileSystems;
-import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Main {
 
@@ -72,15 +70,45 @@ public class Main {
 //            e.getMessage();
 //        }
 
-        Path sourceRoot = FileSystems.getDefault().getPath("FileTree"+ File.separator + "Dir2"+ File.separator + "Dir3");
-        Path targetRoot = FileSystems.getDefault().getPath("FileTree" + File.separator + "Dir3");
+//        Path sourceRoot = FileSystems.getDefault().getPath("FileTree"+ File.separator + "Dir2"+ File.separator + "Dir3");
+//        Path targetRoot = FileSystems.getDefault().getPath("FileTree" + File.separator + "Dir3");
+//
+//        try {
+//            Files.walkFileTree(sourceRoot,new NewCopyFiles(sourceRoot,targetRoot));
+//        } catch (IOException e ){
+//            e.getMessage();
+//        }
 
-        try {
-            Files.walkFileTree(sourceRoot,new NewCopyFiles(sourceRoot,targetRoot));
-        } catch (IOException e ){
-            e.getMessage();
+        File file = new File("C:\\file.txt");
+        Path convertedPath = file.toPath();
+        System.out.println("Converted path " + convertedPath);
+
+        File parent = new File("C:\\Examples");
+        File resolvedFile = new File(parent,"File.txt");
+
+        System.out.println("The Resolved path is " + resolvedFile.toPath());
+
+        File another = new File("C:\\Examples","File.txt");
+        System.out.println(another.toPath());
+
+        Path parentPath = Paths.get("C:\\Example");
+        Path childPath = Paths.get("dir\\File1.txt");
+        System.out.println("The Resolved path of java nio is " + parentPath.resolve(childPath));
+
+        File workingDirectory  = new File("").getAbsoluteFile();
+        System.out.println("Working Directory  "+ workingDirectory.getAbsolutePath());
+
+        System.out.println("Printing dir1 contents");
+        File dir1 = new File(workingDirectory,"FileTree\\Dir2");
+        String []dir2contents = dir1.list();
+
+
+        System.out.println("Printing Dir2 Contents using listFiles method");
+        File[] dir2Files = dir1.listFiles();
+        for(int i=0;i< dir2contents.length;i++) {
+            System.out.println(dir2Files[i].getAbsoluteFile());
         }
-    }
+     }
 
 }
 
